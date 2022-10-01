@@ -11,50 +11,14 @@
 import Foundation
 
 class DataStore: ObservableObject {
-    enum Year: String, CaseIterable {
-       case all = "All Wines"
-       case year1 = "2020"
-       case year2 = "2021"
-    }
-    
-    @Published var year: Year = .all
     @Published var wines: [Wine] = []
     @Published var varieties: [Variety] = []
     @Published var wineries: [Winery] = []
     @Published var logEntries: [LogEntry] = []
     @Published var tabSelection = 1
-    
-    var filteredLogs: [LogEntry] {
-        switch year {
-        case .all:
-            return logEntries
-                .sorted(using: KeyPathComparator(\.date))
-        default:
-            return logEntries.filter { $0.dateComponents.year == Int(year.rawValue)}
-                .sorted(using: KeyPathComparator(\.date))
-        }
-    }
 
     init() {
         seedData()
-    }
-    
-    var loggedIn: Int {
-        filteredLogs
-            .filter{$0.action == .in}
-            .map {$0.qty}
-            .reduce(0, +)
-    }
-    
-    var loggedOut: Int {
-        filteredLogs
-            .filter{$0.action == .out}
-            .map {$0.qty}
-            .reduce(0, +)
-    }
-    
-    var currentInventory: Int {
-        loggedIn - loggedOut
     }
     
     func seedData() {
@@ -78,10 +42,10 @@ class DataStore: ObservableObject {
                              action: logEntry.action,
                              qty: logEntry.qty)
                 })
-                print("wines",wines.count)
-                print("wineries", wineries.count)
-                print("varieties", varieties.count)
-                print("log entries", logEntries.count)
+                
+                // build new model now
+                print(wines.count)
+                print(logEntries.count)
             } catch {
                 print(error.localizedDescription)
                 print("Could not decode data")

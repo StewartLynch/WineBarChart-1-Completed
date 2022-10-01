@@ -11,12 +11,13 @@
 import SwiftUI
 
 struct WineListView: View {
-    @EnvironmentObject var store: DataStore
+    var logEntries: [LogEntry]
+    @StateObject var vm = WineLogViewModel()
     var body: some View {
         NavigationStack {
             VStack {
-                Picker("Year", selection: $store.year) {
-                    ForEach(DataStore.Year.allCases, id: \.self) { year in
+                Picker("Year", selection: $vm.year) {
+                    ForEach(Year.allCases, id: \.self) { year in
                         Text(year.rawValue)
                     }
                 }
@@ -26,12 +27,12 @@ struct WineListView: View {
                     HStack {
                         Spacer()
                         VStack {
-                            LabeledContent("Wine IN ", value: "\(store.loggedIn)")
+                            LabeledContent("Wine IN ", value: "\(vm.loggedIn)")
                                 .foregroundColor(.green)
-                            LabeledContent("Wine OUT ", value: "\(store.loggedOut)")
+                            LabeledContent("Wine OUT ", value: "\(vm.loggedOut)")
                                 .foregroundColor(.red)
                             Divider()
-                            LabeledContent("+/- ", value: "\(store.currentInventory)")
+                            LabeledContent("+/- ", value: "\(vm.currentInventory)")
                         }
                         .font(.caption)
                         .bold()
@@ -40,7 +41,7 @@ struct WineListView: View {
                         .background(RoundedRectangle(cornerRadius: 10).fill(Color(.secondarySystemBackground)))
                         Spacer()
                     }
-                    ForEach(store.filteredLogs) { log in
+                    ForEach(vm.filteredLogs) { log in
                         HStack {
                             VStack {
                                 Image(systemName: log.action == .in ?
@@ -64,25 +65,15 @@ struct WineListView: View {
             }
             .navigationTitle("Wine Inventory")
         }
+        .onAppear {
+            vm.setup(logEntries: logEntries)
+            vm.year = .all
+        }
     }
 }
 
 struct WineListView_Previews: PreviewProvider {
     static var previews: some View {
-        WineListView()
-            .environmentObject(DataStore())
+        WineListView(logEntries:DataStore().logEntries)
     }
 }
-
-//struct RowView: View {
-//    let title: String
-//    let qty: Int
-//    var body: some View {
-//        GridRow {
-//            Text(title)
-//            Text( "\(qty)")
-//                .gridColumnAlignment(.trailing)
-//        }
-//        .bold()
-//    }
-//}

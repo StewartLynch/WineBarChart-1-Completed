@@ -14,15 +14,19 @@
 		BB3D0CD1287CC58A00F89DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3D0CD0287CC58A00F89DE5 /* Assets.xcassets */; };
 		BB3D0CD4287CC58A00F89DE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3D0CD3287CC58A00F89DE5 /* Preview Assets.xcassets */; };
 		BB523B122880F29500685E00 /* TypesBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB523B112880F29500685E00 /* TypesBarChartView.swift */; };
-		BB62C002287D1013001A8CA4 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62C001287D1013001A8CA4 /* DataStore.swift */; };
-		BB62C004287D10E9001A8CA4 /* WineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62C003287D10E9001A8CA4 /* WineListView.swift */; };
 		BB84240828823AA800BF55B9 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB84240728823AA800BF55B9 /* Date+Extension.swift */; };
 		BB96462C287F797D00473B79 /* WineData.json in Resources */ = {isa = PBXBuildFile; fileRef = BB96462B287F797D00473B79 /* WineData.json */; };
 		BB96462E287F7A4900473B79 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96462D287F7A4900473B79 /* Wine.swift */; };
+		BBA3EA042887D04400377400 /* InOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA3EA032887D04400377400 /* InOutViewModel.swift */; };
+		BBA4FD5F288760E5001F79EC /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA4FD5E288760E5001F79EC /* ChartViewModel.swift */; };
+		BBA61EF42887056300C7D945 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA61EF32887056300C7D945 /* Year.swift */; };
+		BBA61EF62887057A00C7D945 /* WineLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA61EF52887057A00C7D945 /* WineLogViewModel.swift */; };
+		BBA61EFA2887059A00C7D945 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA61EF92887059A00C7D945 /* DataStore.swift */; };
 		BBA93179287F48BB00A91B96 /* GroupingChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA93178287F48BB00A91B96 /* GroupingChartView.swift */; };
 		BBA9317B287F68B900A91B96 /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA9317A287F68B900A91B96 /* Import.swift */; };
 		BBB4D1C3288139F500194C46 /* StartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB4D1C2288139F500194C46 /* StartTab.swift */; };
 		BBDA39BA2881C66F00CA04F8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDA39B92881C66F00CA04F8 /* Launch Screen.storyboard */; };
+		BBE173B42889015300E85D7F /* WineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE173B32889015300E85D7F /* WineListView.swift */; };
 		BBF503D3287FB29000A49407 /* Variety.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF503D2287FB29000A49407 /* Variety.swift */; };
 		BBF503D5287FB2A500A49407 /* Winery.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF503D4287FB2A500A49407 /* Winery.swift */; };
 		BBF503D7287FB31D00A49407 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF503D6287FB31D00A49407 /* LogEntry.swift */; };
@@ -38,15 +42,19 @@
 		BB3D0CD0287CC58A00F89DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB3D0CD3287CC58A00F89DE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB523B112880F29500685E00 /* TypesBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesBarChartView.swift; sourceTree = "<group>"; };
-		BB62C001287D1013001A8CA4 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		BB62C003287D10E9001A8CA4 /* WineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineListView.swift; sourceTree = "<group>"; };
 		BB84240728823AA800BF55B9 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		BB96462B287F797D00473B79 /* WineData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WineData.json; sourceTree = "<group>"; };
 		BB96462D287F7A4900473B79 /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
+		BBA3EA032887D04400377400 /* InOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InOutViewModel.swift; sourceTree = "<group>"; };
+		BBA4FD5E288760E5001F79EC /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		BBA61EF32887056300C7D945 /* Year.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Year.swift; sourceTree = "<group>"; };
+		BBA61EF52887057A00C7D945 /* WineLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineLogViewModel.swift; sourceTree = "<group>"; };
+		BBA61EF92887059A00C7D945 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BBA93178287F48BB00A91B96 /* GroupingChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupingChartView.swift; sourceTree = "<group>"; };
 		BBA9317A287F68B900A91B96 /* Import.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
 		BBB4D1C2288139F500194C46 /* StartTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTab.swift; sourceTree = "<group>"; };
 		BBDA39B92881C66F00CA04F8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BBE173B32889015300E85D7F /* WineListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineListView.swift; sourceTree = "<group>"; };
 		BBF503D2287FB29000A49407 /* Variety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variety.swift; sourceTree = "<group>"; };
 		BBF503D4287FB2A500A49407 /* Winery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winery.swift; sourceTree = "<group>"; };
 		BBF503D6287FB31D00A49407 /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
@@ -85,7 +93,7 @@
 			children = (
 				BB3D0CCC287CC58900F89DE5 /* AppEntry.swift */,
 				BBD875F228822B09002B2D8B /* Intro Charts */,
-				BB62C001287D1013001A8CA4 /* DataStore.swift */,
+				BBA61EF92887059A00C7D945 /* DataStore.swift */,
 				BBB4D1C2288139F500194C46 /* StartTab.swift */,
 				BBF503DB287FE52800A49407 /* Wine List Screen */,
 				BB523B0E2880ED4E00685E00 /* Types Chart */,
@@ -113,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				BB523B112880F29500685E00 /* TypesBarChartView.swift */,
+				BBA4FD5E288760E5001F79EC /* ChartViewModel.swift */,
 			);
 			path = "Types Chart";
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 				BBF503D2287FB29000A49407 /* Variety.swift */,
 				BBF503D4287FB2A500A49407 /* Winery.swift */,
 				BBF503D8287FE29400A49407 /* Enums.swift */,
+				BBA61EF32887056300C7D945 /* Year.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				BB16380F287F23A00044A99F /* InOutBarChartView.swift */,
+				BBA3EA032887D04400377400 /* InOutViewModel.swift */,
 			);
 			path = "In_Out Chart";
 			sourceTree = "<group>";
@@ -174,7 +185,8 @@
 		BBF503DB287FE52800A49407 /* Wine List Screen */ = {
 			isa = PBXGroup;
 			children = (
-				BB62C003287D10E9001A8CA4 /* WineListView.swift */,
+				BBE173B32889015300E85D7F /* WineListView.swift */,
+				BBA61EF52887057A00C7D945 /* WineLogViewModel.swift */,
 			);
 			path = "Wine List Screen";
 			sourceTree = "<group>";
@@ -255,16 +267,20 @@
 				BB33170028835C95001B2021 /* NominalChartExample.swift in Sources */,
 				BBA9317B287F68B900A91B96 /* Import.swift in Sources */,
 				BBF503D9287FE29400A49407 /* Enums.swift in Sources */,
+				BBA61EF62887057A00C7D945 /* WineLogViewModel.swift in Sources */,
+				BBA4FD5F288760E5001F79EC /* ChartViewModel.swift in Sources */,
 				BBF503D3287FB29000A49407 /* Variety.swift in Sources */,
+				BBE173B42889015300E85D7F /* WineListView.swift in Sources */,
 				BB163810287F23A00044A99F /* InOutBarChartView.swift in Sources */,
+				BBA61EFA2887059A00C7D945 /* DataStore.swift in Sources */,
 				BB96462E287F7A4900473B79 /* Wine.swift in Sources */,
 				BB523B122880F29500685E00 /* TypesBarChartView.swift in Sources */,
 				BBF503D5287FB2A500A49407 /* Winery.swift in Sources */,
 				BB3D0CCD287CC58900F89DE5 /* AppEntry.swift in Sources */,
 				BBF503D7287FB31D00A49407 /* LogEntry.swift in Sources */,
-				BB62C002287D1013001A8CA4 /* DataStore.swift in Sources */,
+				BBA3EA042887D04400377400 /* InOutViewModel.swift in Sources */,
 				BB3317022883795C001B2021 /* TemporalChartExample.swift in Sources */,
-				BB62C004287D10E9001A8CA4 /* WineListView.swift in Sources */,
+				BBA61EF42887056300C7D945 /* Year.swift in Sources */,
 				BBB4D1C3288139F500194C46 /* StartTab.swift in Sources */,
 				BB84240828823AA800BF55B9 /* Date+Extension.swift in Sources */,
 			);
